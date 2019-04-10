@@ -52,4 +52,21 @@ The first subnetwork’s input is an image, followed by a sequence of convolutio
 To compare the two images x1 and x2, we compute the distance d between their encoding f(x1) and f(x2). If it is less than a threshold (a hyperparameter), it means that the two pictures are the same person, if not, they are two different persons.
 <img src="https://user-images.githubusercontent.com/27866638/55897610-80021c00-5bde-11e9-9a8a-31bc6ac9a348.png" width="500"><img src="https://user-images.githubusercontent.com/27866638/55897695-9dcf8100-5bde-11e9-8207-cad6b9ee937f.png" width="500">
 
-In order to learn parameters to get good encodding for the images we use [Triplet loss function](https://www.youtube.com/watch?v=d2XB5-tuCWU).  
+In order to learn parameters to get good encodding for the images we use [Triplet loss function](https://www.youtube.com/watch?v=d2XB5-tuCWU).
+## Triplet Loss function:
+
+<img src="https://user-images.githubusercontent.com/27866638/55898109-8a70e580-5bdf-11e9-978f-16b630594158.png" width = "800">
+
+In [Triplet loss function](https://www.youtube.com/watch?v=d2XB5-tuCWU), we use three images:
+
+- Anchor image **A**
+- Positive image **P**
+- Negative image **N**
+
+So, we want the distance d(A, P) between the encoding of the anchor and the encoding of the positive example to be less than or equal to the distance d(A, N) between the encoding of the anchor and the encoding of the negative example.
+
+The problem here is that the model can learn to make the same encoding for different images. For this reason, we are adding a margin alpha (hyperparameter), to prevent this from happening, and to always have a gap between A and P versus A and N.
+
+<img src="https://user-images.githubusercontent.com/27866638/55898430-2f8bbe00-5be0-11e9-9d16-484ede4df38b.png" width="500"><img src="https://user-images.githubusercontent.com/27866638/55898614-9f01ad80-5be0-11e9-97d2-b8ff4f8aa038.png" width="500">
+
+As mentioned in earlier sections we use an Inception Network which is then connected to a siamese network to get different image encoddings.
