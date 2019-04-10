@@ -126,11 +126,11 @@ Use the following commands to install the model in your machine.
         
 ## References:
 
-- (https://arxiv.org/pdf/1503.03832.pdf)
-- (https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf)
-- (https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf)
-- (https://arxiv.org/abs/1503.03832)
-- (https://www.youtube.com/watch?v=d2XB5-tuCWU)
-- (https://research.fb.com/publications/deepface-closing-the-gap-to-human-level-performance-in-face-verification/)
-- (https://www.youtube.com/watch?v=-FfMVnwXrZ0)
-- (https://medium.freecodecamp.org/making-your-own-face-recognition-system-29a8e728107c)
+- https://arxiv.org/pdf/1503.03832.pdf
+- https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf
+- https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf
+- https://arxiv.org/abs/1503.03832
+- https://www.youtube.com/watch?v=d2XB5-tuCWU
+- https://research.fb.com/publications/deepface-closing-the-gap-to-human-level-performance-in-face-verification/
+- https://www.youtube.com/watch?v=-FfMVnwXrZ0
+- https://medium.freecodecamp.org/making-your-own-face-recognition-system-29a8e728107c
