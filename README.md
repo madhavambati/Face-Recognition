@@ -71,7 +71,7 @@ The problem here is that the model can learn to make the same encoding for diffe
 
 As mentioned in earlier sections we use an Inception Network which is then connected to a siamese network to get different image encoddings.
 
-## Inception Network/GoogLeNet: 
+## Inception Network/ GoogLeNet: 
 
 [Inception Network](https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf) is a one big mess of a neural net with a lot of hidden layers. Inception network architecture is given below. 
 
@@ -85,7 +85,8 @@ Inception blocks with 1×1 Convolution
 
 The computational costs for GoogLeNet are very high so I used a pre-trained model in my Face-recognition system.
 If you want to go deep into the study of Inception network, refer to the links below or at the end of the documentation.
-### Important links:
+
+### Important links for Inception Network:
 
 - [Research paper](https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf)
 - [Explaination of the Network](https://medium.com/coinmonks/paper-review-of-googlenet-inception-v1-winner-of-ilsvlc-2014-image-classification-c2b3565a64e7)
