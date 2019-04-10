@@ -2,7 +2,7 @@
 
 An Introduction to **one-shot learning**
 
-Implementation of Face-recognition system using [FaceNet](https://arxiv.org/pdf/1503.03832.pdf) network.
+Implementation of Face-recognition system using [FaceNet](https://arxiv.org/pdf/1503.03832.pdf).
 
 This is based on learning a **Euclidean em-bedding** per image using a deep convolutional network. The network  is  trained  such  that  the  squared  L2  distances  in the embedding space directly correspond to face similarity.
 
