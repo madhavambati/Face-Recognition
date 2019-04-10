@@ -71,7 +71,7 @@ The problem here is that the model can learn to make the same encoding for diffe
 
 As mentioned in earlier sections we use an Inception Network which is then connected to a siamese network to get different image encoddings.
 
-## Inception Network: 
+## Inception Network/GoogLeNet: 
 
 [Inception Network](https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf) is a one big mess of a neural net with a lot of hidden layers. Inception network architecture is given below. 
 
@@ -79,4 +79,16 @@ As mentioned in earlier sections we use an Inception Network which is then conne
 
 It contains 1×1 Convolution at the middle of the network. And global average pooling is used at the end of the network instead of using fully connected layers. These two techniques are from another paper “[Network In Network](https://arxiv.org/pdf/1312.4400.pdf)”. Another technique, called inception module, is to have different sizes/types of convolutions for the same input and stacking all the outputs.
 
+Inception blocks with 1×1 Convolution
 
+<img src="https://user-images.githubusercontent.com/27866638/55900263-69f75a00-5be4-11e9-8bd9-ec2f210dafd6.png" height="300">
+
+The computational costs for GoogLeNet are very high so I used a pre-trained model in my Face-recognition system.
+If you want to go deep into the study of Inception network, refer to the links below or at the end of the documentation.
+### Important links:
+
+- [Research paper](https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf)
+- [Explaination of the Network](https://medium.com/coinmonks/paper-review-of-googlenet-inception-v1-winner-of-ilsvlc-2014-image-classification-c2b3565a64e7)
+- [Explanation Video](https://www.youtube.com/watch?v=KfV8CJh7hE0)
+- [Different versions of GoogleNet](https://towardsdatascience.com/a-simple-guide-to-the-versions-of-the-inception-network-7fc52b863202)
+- [Overview](https://www.cs.colostate.edu/~dwhite54/InceptionNetworkOverview.pdf)
