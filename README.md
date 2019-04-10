@@ -83,7 +83,7 @@ Inception blocks with 1×1 Convolution
 
 <img src="https://user-images.githubusercontent.com/27866638/55900263-69f75a00-5be4-11e9-8bd9-ec2f210dafd6.png" height="300">
 
-The computational costs for GoogLeNet are very high so I used a pre-trained model in my Face-recognition system.
+The computational costs for training GoogLeNet are very high so I used a pre-trained model in my Face-recognition system.
 If you want to go deep into the study of Inception network, refer to the links below or at the end of the documentation.
 
 ### Important links for Inception Network:
