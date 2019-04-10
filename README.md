@@ -27,6 +27,7 @@ Firstly, we make our database of the faces which we want to recognise. This will
  - [face_recogniser.py](https://github.com/madhavambati/Face-Recognition/blob/master/face_recogniser.py) main file which recognises faces.
  - [fr_utils.py](https://github.com/madhavambati/Face-Recognition/blob/master/fr_utils.py) contains some important functions for Inception network.
  - [inception_network.py](https://github.com/madhavambati/Face-Recognition/blob/master/inception_network.py) contains Inception network blocks
+ - [weights](https://github.com/madhavambati/Face-Recognition/tree/master/weights) cointains weights of pre-trained Inception network
  - [haarcascade_frontalface_default.xml](https://github.com/madhavambati/Face-Recognition/blob/master/haarcascade_frontalface_default.xml) for detecting faces.
 
 ## One-shot Learning:
