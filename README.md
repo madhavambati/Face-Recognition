@@ -70,3 +70,13 @@ The problem here is that the model can learn to make the same encoding for diffe
 <img src="https://user-images.githubusercontent.com/27866638/55898430-2f8bbe00-5be0-11e9-9d16-484ede4df38b.png" width="500"><img src="https://user-images.githubusercontent.com/27866638/55898614-9f01ad80-5be0-11e9-97d2-b8ff4f8aa038.png" width="500">
 
 As mentioned in earlier sections we use an Inception Network which is then connected to a siamese network to get different image encoddings.
+
+## Inception Network: 
+
+[Inception Network](https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf) is a one big mess of a neural net with a lot of hidden layers. Inception network architecture is given below. 
+
+<img src="https://user-images.githubusercontent.com/27866638/55899664-01f44400-5be3-11e9-8ff5-cacba912bd76.png" width="880">
+
+It contains 1×1 Convolution at the middle of the network. And global average pooling is used at the end of the network instead of using fully connected layers. These two techniques are from another paper “[Network In Network](https://arxiv.org/pdf/1312.4400.pdf)”. Another technique, called inception module, is to have different sizes/types of convolutions for the same input and stacking all the outputs.
+
+
