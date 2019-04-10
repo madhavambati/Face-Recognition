@@ -21,7 +21,7 @@ we feed frames from the webcam to the network to determine whether or not the fr
 Firstly, we make our database of the faces which we want to recognise. This will be a directory named **images**. To do this, different functions are defined based on the users requirements. Input image to the network must of shape **96×96×3**. A pre-processing pipeline is involved befor saving the image to database. While recognising faces, a frame (which contains a face) is taken from webcam and fed into our network. The network takes in the camera frame and database, compares the similarities and differences between each set of frame and database image. The output will be a string which is the name of the most likely similar image in the database. If the face is not found in the database, the output will be a zero. The essence of each file in this repo is each given below.
 
  
- - [face function.py](https://github.com/madhavambati/Face-Recognition-powered-by-FaceNet/blob/master/face_functions.py) contains a preprocessing pipeline and some other essential functions.
+ - [face functions.py](https://github.com/madhavambati/Face-Recognition-powered-by-FaceNet/blob/master/face_functions.py) contains a preprocessing pipeline and some other essential functions.
  - [add_to_database.py](https://github.com/madhavambati/Face-Recognition/blob/master/add_to_database.py) takes a frame from the webcam and saves in the images directory (database)
  - [face_cutter.py](https://github.com/madhavambati/Face-Recognition/blob/master/face_cutter.py) extracts a face from an image and saves in database.
  - [face_recogniser.py](https://github.com/madhavambati/Face-Recognition/blob/master/face_recogniser.py) main file which recognises faces.
@@ -94,3 +94,43 @@ If you want to go deep into the study of Inception network, refer to the links b
 - [Explanation Video](https://www.youtube.com/watch?v=KfV8CJh7hE0)
 - [Different versions of GoogleNet](https://towardsdatascience.com/a-simple-guide-to-the-versions-of-the-inception-network-7fc52b863202)
 - [Overview](https://www.cs.colostate.edu/~dwhite54/InceptionNetworkOverview.pdf)
+
+## Installation:
+
+Use the following commands to install the model in your machine. 
+
+- Clone the repository 
+
+      git clone https://github.com/madhavambati/Face-Recognition.git
+      
+ - Move to directory Face-Recognition
+ 
+       cd Face-Recognition
+       
+ - Install all the dependencies
+ 
+       pip install requirements.txt
+       
+ - To add a face from webcam to database 
+       
+       python add_to_database.py
+       
+ - To add a face from image to database, first extract the face from image and then add the face.
+       
+        python face_cutter.py
+        python add_to _database.py
+        
+ - To run the Face-recognition system
+ 
+        python face_recogniser.py
+        
+## References:
+
+- (https://arxiv.org/pdf/1503.03832.pdf)
+- (https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf)
+- (https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf)
+- (https://arxiv.org/abs/1503.03832)
+- (https://www.youtube.com/watch?v=d2XB5-tuCWU)
+- (https://research.fb.com/publications/deepface-closing-the-gap-to-human-level-performance-in-face-verification/)
+- (https://www.youtube.com/watch?v=-FfMVnwXrZ0)
+- (https://medium.freecodecamp.org/making-your-own-face-recognition-system-29a8e728107c)
