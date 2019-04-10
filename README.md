@@ -41,4 +41,15 @@ To solve this problem, we cannot use only a convolutional neural network for two
 
 However, we can use Siamese neural network for face recognition.
 
+## Siamese Network:
 
+Siamese network is an artificial neural network that use the same weights while working in tandem on two different input vectors to compute comparable output vectors. Often one of the output vectors are precomputed, thus forming a baseline the other output vector are compared against. This is similar to a comparing fingerprints or more technical as a distance function for Locality-sensitive hashing. 
+
+<img src="https://user-images.githubusercontent.com/27866638/55897417-18e46780-5bde-11e9-8b05-932523cd5388.png" width="880">
+
+The first subnetwork’s input is an image, followed by a sequence of convolutional, pooling, fully connected layers and finally a feature vector (We are not going to use a softmax function for classification). The last vector f(x1) is the encoding of the input x1. Then, we do the same thing for the image x2, by feeding it to the second subnetwork which is totally identical to the first one to get a different encoding f(x2) of the input x2.
+
+To compare the two images x1 and x2, we compute the distance d between their encoding f(x1) and f(x2). If it is less than a threshold (a hyperparameter), it means that the two pictures are the same person, if not, they are two different persons.
+<img src="https://user-images.githubusercontent.com/27866638/55897610-80021c00-5bde-11e9-9a8a-31bc6ac9a348.png" width="500"><img src="https://user-images.githubusercontent.com/27866638/55897695-9dcf8100-5bde-11e9-8207-cad6b9ee937f.png" width="500">
+
+In order to learn parameters to get good encodding for the images we use [Triplet loss function](https://www.youtube.com/watch?v=d2XB5-tuCWU).  
